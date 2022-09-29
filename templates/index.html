@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<div lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="./static/style.css" rel="stylesheet">
+        <meta name="description"
+            content="Página de exibição de produtos de uma vitrine virtual de uma loja de bolos fictícia para fins acadêmicos">
+        <title>:: Projeto - Vitrine Virtual utilizando Flask ::</title>
+    </head>
+
+    <body>
+        <!--Colocar um cabeçalho com Home - Sobre - Carrinho-->
+
+        <header class="cabecalho">
+            <img class="logo-cabecalho" src="./static/icone.png" alt="Logo da Página da Cake Flask">
+            <nav class="menu-cabecalho">
+                <a class="item-menu-cabecalho" id="link-active" href="#"> Home </a>
+                <a class="item-menu-cabecalho" href="/sobre"> Sobre</a>
+            </nav>
+
+        </header>
+
+
+        <div class="text-center">
+            <h1 class="titulo-pagina">Vitrine Virtual - Cake Flask</h1>
+            <p class="text-center" id="subtitulo-vitrine">Vitrine virtual da Cake Flask com as delícias da cidade!</p>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./static/1.jpg" class="d-block w-100" id="img-carousel" data-interval="3000">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/2.jpg" class="d-block w-100" id="img-carousel" data-interval="3000">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/3.jpg" class="d-block w-100" id="img-carousel" data-interval="3000">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <p class="text-center" id="subtitulo-vitrine">Algumas das nossas delícias!</p>
+        <!-- Feitos com Chocolate-->
+        <section class="vitrine"><a href="#cardapio-doces"></a>
+            <div class="d-flex justify-content-center">
+
+                <div class="p-2 bd-highlight">
+                    <h2 class="produtos">Devil's Food Cake</h2>
+                    <a href="/produto?codigo=1" class="photo"> <img src="/static/devil-food.jfif"
+                            alt="Foto de Bolo de Chocolate Devils Food Cake" />
+                        <div class="glow-wrap"> <i class="glow"></i></div>
+                    </a>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h2 class="produtos">Mousse de Chocolate</h2>
+                    <a href="/produto?codigo=2" class="photo"> <img src="/static/mousse.jfif"
+                            alt="Foto de Mousse de Chocolate" />
+                        <div class="glow-wrap"><i class="glow"></i></div>
+                    </a>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h2 class="produtos">Bolo Vulcão</h2>
+                    <a href="/produto?codigo=3" class="photo"> <img src="/static/bolo-vulcao.jfif"
+                            alt="Foto de Bolo Vulcão de chocolate" />
+                        <div class="glow-wrap"> <i class="glow"></i></div>
+                    </a>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <h2 class="produtos">Verrine au Chocolat</h2>
+                    <a href="/produto?codigo=4" class="photo"> <img src="/static/verrine.jpg"
+                            alt="Foto de Verrine com cereja e chocolate" />
+                        <div class="glow-wrap"> <i class="glow"></i></div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- JavaScript Bundle with Popper -->
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+
+        <footer class="link-footer">
+            Elaborado por Pâmela Possani - Elas na Tech - T8
+            <a href="https://www.flaticon.com/free-icons/cake" class="links" title="cake icons">Cake icons created by
+                monkik -
+                Flaticon</a>
+        </footer>
+    </body>
+
+    </html>
